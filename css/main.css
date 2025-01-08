@@ -6,6 +6,7 @@ body {
     display: none;
 }
 
+/* ปรับระยะข้อความ */
 .responsive-text {
     max-width: 550px;
     word-break: break-word;
