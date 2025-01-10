@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <nav class="w-full bg-[#ECF7FB] text-black fixed top-0">
+    <nav class="fixed w-full bg-[#ECF7FB] text-black top-0 left-0 z-50">
         <div class="container mx-auto md:mx-72 flex p-5 justify-between items-center">
             <div class="flex items-center gap-10">
                 <p class="text-[40px] font-[700] text-blue-900">Agency</p>
@@ -45,7 +45,7 @@
     </nav>
 
     <!-- section 1 ปก -->
-    <section id="head-cover" class="bg-[#ECF7FB]  w-full h-[900px] md:h-[960px]">
+    <section id="head-cover" class="bg-[#ECF7FB] w-full h-[900px] md:h-[960px]">
         <div
             class="container mx-auto md:mx-72 flex flex-col-reverse md:flex-row items-center justify-between text-left pt-20 px-7">
             <!-- Text Section -->
@@ -794,8 +794,10 @@
     </section>
 
     <!-- section 7 Comment -->
-    <section id="comment">
+    <section id="comment" class="relative">
         <div class="flex items-center justify-center">
+
+            <!-- ขนาดจอเดสท้อป -->
             <div class="hidden md:flex">
                 <svg width="1508" height="910" viewBox="0 0 1508 910" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path opacity="0.1"
@@ -970,7 +972,18 @@
                         </linearGradient>
                     </defs>
                 </svg>
+
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <div class="text-center max-w-3xl mx-auto">
+                        <p class="text-[30px] text-[#183B56] leading-[60px] mb-4">“I’ve completed support from my Agency  about 1 years ago. Their make the prototyping process so easy and faster. I feel this is the best apps for
+                            the prototyping use”</p>
+                        <p class="text-[#0BC0EB] text-[18px] font-[450] leading-[36px]">William Smith <br>
+                            <span class="text-[#5A7184]">CEO f ZaVad Company</span></p>
+                    </div>
+                </div>
             </div>
+
+            <!-- ขนาดจอโทรศัพท์ -->
             <div class="md:hidden order-1">
                 <!-- svg บน -->
                 <svg width="375" height="271" viewBox="0 0 375 271" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1063,7 +1076,7 @@
                 </svg>
 
                 <div class="text-center">
-                    <p class="text-[30px] leading-[60px] mx-5">“I’ve completed support from my Agency  about 1 years ago. Their make the prototyping process so easy and faster. I feel this is the best apps for
+                    <p class="text-[30px] text-[#183B56] leading-[60px] mx-5">“I’ve completed support from my Agency  about 1 years ago. Their make the prototyping process so easy and faster. I feel this is the best apps for
                         the prototyping use”</p>
                     <p class="text-[#0BC0EB] text-[18px] font-[450] leading-[36px]">William Smith <br>
                         <span class="text-[#5A7184]">CEO f ZaVad Company</span></p>
@@ -1163,12 +1176,36 @@
         </div>
     </section>
 
-    <footer class="text-black py-10 px-7">
+    <!-- section 8 Subscribe -->
+     <section id="subscribe" class="flex justify-center items-center px-4 md:px-0">
+        <div class="container mx-auto p-1 bg-[#0BC0EB] rounded-[20px] md:rounded-[60px] shadow-none">
+            <div class="text-center p-2 flex flex-col items-center justify-center h-[304px] md:h-[460px]">
+                <h3 class="text-[30px] md:text-[50px] font-[900] text-white leading-[40px] md:leading-[60px] mb-4">
+                    Subscribe Now for <br> Get Special Features!</h3>
+                <form action="#" method="post" class="flex items-center w-full max-w-[574px]">
+                    <div class="flex items-center justify-center mt-4 relative w-full">
+                        <input type="email" name="email" id="email" placeholder="Enter Your Email"
+                            class="w-[327px] md:w-[574px] h-[80px] md:h-[100px] px-4 border-2 rounded-[20px] text-[16px]">
+                        <button type="submit"
+                            class="absolute right-0 top-0 h-[48px] md:h-[64px] w-[126px] md:w-[168px] bg-[#404C99] text-white px-4 rounded-[11.43px] md:rounded-[15px] m-4 md:m-5 text-[16px] md:text-[16px] flex items-center justify-center">
+                            Submit 
+                            <svg width="22" height="15" viewBox="0 0 22 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="ml-4">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.50004 7.53207C0.50004 7.33316 0.579058 7.1424 0.719709 7.00175C0.860363 6.86109 1.05113 6.78207 1.25004 6.78207H18.9395L14.219 2.06308C14.1493 1.99334 14.094 1.91056 14.0563 1.81945C14.0185 1.72834 13.9991 1.63069 13.9991 1.53208C13.9991 1.43346 14.0185 1.33581 14.0563 1.2447C14.094 1.15359 14.1493 1.07081 14.219 1.00108C14.2888 0.931343 14.3716 0.876029 14.4627 0.83829C14.5538 0.800552 14.6514 0.781128 14.75 0.781128C14.8487 0.781128 14.9463 0.800552 15.0374 0.83829C15.1285 0.876029 15.2113 0.931343 15.281 1.00108L21.281 7.00107C21.3509 7.07074 21.4063 7.15351 21.4441 7.24463C21.4819 7.33574 21.5014 7.43342 21.5014 7.53207C21.5014 7.63073 21.4819 7.72841 21.4441 7.81952C21.4063 7.91064 21.3509 7.99341 21.281 8.06308L15.281 14.0631C15.2113 14.1328 15.1285 14.1881 15.0374 14.2259C14.9463 14.2636 14.8487 14.283 14.75 14.283C14.6514 14.283 14.5538 14.2636 14.4627 14.2259C14.3716 14.1881 14.2888 14.1328 14.219 14.0631C14.1493 13.9933 14.094 13.9106 14.0563 13.8195C14.0185 13.7283 13.9991 13.6307 13.9991 13.5321C13.9991 13.4335 14.0185 13.3358 14.0563 13.2447C14.094 13.1536 14.1493 13.0708 14.219 13.0011L18.9395 8.28207H1.25004C1.05113 8.28207 0.860363 8.20306 0.719709 8.06241C0.579058 7.92175 0.50004 7.73099 0.50004 7.53207Z" fill="white"/>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+     </section>
+
+    <footer class="text-black py-20 px-7">
         <div class="container mx-auto grid grid-cols-1 md:grid-cols-6 gap-10">
             <!-- Column 1 -->
             <div class="md:col-span-2">
-                <p class="text-4xl font-bold text-blue-900">Agency</p>
-                <p class="mt-4 text-gray-400">
+                <p class="text-4xl font-bold text-[#404C99]">Agency</p>
+                <p class="mt-4 text-[#5A7184]">
                     Professionally scale cross functional<br>
                     human capital and extensive technology.
                 </p>
@@ -1178,58 +1215,58 @@
                     <a><i class="fab fa-instagram fa-1x"></i></a>
                     <a><i class="fab fa-linkedin fa-1x"></i></a>
                 </div>
-                <p class="hidden md:block mt-4 text-gray-400">Copyright© Agency. All rights reserved.</p>
+                <p class="hidden md:block mt-4 text-[#5A7184]">Copyright© Agency. All rights reserved.</p>
             </div>
             <!-- Column 2 -->
             <div>
                 <h3 class="text-lg font-bold mb-3">Services</h3>
                 <ul class="text-sm">
-                    <li class="mb-4"><a href="#" class="text-gray-400">Design</a></li>
-                    <li class="mb-4"><a href="#" class="text-gray-400">Development</a></li>
-                    <li class="mb-4"><a href="#" class="text-gray-400">Marketing</a></li>
-                    <li class="mb-4"><a href="#" class="text-gray-400">Content Writing</a></li>
+                    <li class="mb-4"><a href="#" class="text-[#5A7184]">Design</a></li>
+                    <li class="mb-4"><a href="#" class="text-[#5A7184]">Development</a></li>
+                    <li class="mb-4"><a href="#" class="text-[#5A7184]">Marketing</a></li>
+                    <li class="mb-4"><a href="#" class="text-[#5A7184]">Content Writing</a></li>
                 </ul>
             </div>
             <!-- Column 3 -->
             <div>
                 <h3 class="text-lg font-bold mb-3">Company</h3>
                 <ul class="text-sm">
-                    <li class="mb-4"><a href="#" class="text-gray-400">About</a></li>
-                    <li class="mb-4"><a href="#" class="text-gray-400">Terms</a></li>
-                    <li class="mb-4"><a href="#" class="text-gray-400">Privacy Policy</a></li>
-                    <li class="mb-4"><a href="#" class="text-gray-400">Careers</a></li>
+                    <li class="mb-4"><a href="#" class="text-[#5A7184]">About</a></li>
+                    <li class="mb-4"><a href="#" class="text-[#5A7184]">Terms</a></li>
+                    <li class="mb-4"><a href="#" class="text-[#5A7184]">Privacy Policy</a></li>
+                    <li class="mb-4"><a href="#" class="text-[#5A7184]">Careers</a></li>
                 </ul>
             </div>
             <!-- Column 4 -->
             <div>
                 <h3 class="text-lg font-bold mb-3">Portfolio</h3>
                 <ul class="text-sm">
-                    <li class="mb-4"><a href="#" class="text-gray-400">Portfolio</a></li>
-                    <li class="mb-4"><a href="#" class="text-gray-400">Single Case</a></li>
-                    <li class="mb-4"><a href="#" class="text-gray-400">Payment</a></li>
+                    <li class="mb-4"><a href="#" class="text-[#5A7184]">Portfolio</a></li>
+                    <li class="mb-4"><a href="#" class="text-[#5A7184]">Single Case</a></li>
+                    <li class="mb-4"><a href="#" class="text-[#5A7184]">Payment</a></li>
                 </ul>
             </div>
             <!-- Column 5 -->
             <div>
                 <h3 class="text-lg font-bold mb-3">Contact</h3>
                 <ul class="text-sm">
-                    <li class="mb-4"><a href="#"><span class="text-black">Call :</span> <span class="text-gray-400">971
+                    <li class="mb-4"><a href="#"><span class="text-black">Call :</span> <span class="text-[#5A7184]">971
                                 5546 963</span></a></li>
                     <li class="mb-4"><a href="#"><span class="text-black">Email :</span> <span
-                                class="text-gray-400">example@gmail.com</span></a></li>
+                                class="text-[#5A7184]">example@gmail.com</span></a></li>
                     <li class="mb-4"><a href="#"><span class="text-black">Address :</span> <span
-                                class="text-gray-400">Dhaka, Bangladesh</span></a></li>
+                                class="text-[#5A7184]">Dhaka, Bangladesh</span></a></li>
                 </ul>
             </div>
             <!-- Social Media and Copyright -->
-            <div class="md:hidden flex flex-col mt-4">
+            <div class="md:hidden flex flex-col mt-3">
                 <div class="flex space-x-4 mt-4">
                     <a><i class="fab fa-google fa-1x"></i></a>
                     <a><i class="fab fa-twitter fa-1x"></i></a>
                     <a><i class="fab fa-instagram fa-1x"></i></a>
                     <a><i class="fab fa-linkedin fa-1x"></i></a>
                 </div>
-                <p class="mt-4 text-gray-400">Copyright©Agency.All right reserved</p>
+                <p class="mt-4 text-[#5A7184]">Copyright©Agency.All right reserved</p>
             </div>
         </div>
     </footer>
